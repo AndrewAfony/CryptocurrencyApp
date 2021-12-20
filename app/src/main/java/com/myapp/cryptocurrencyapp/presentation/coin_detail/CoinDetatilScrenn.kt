@@ -23,7 +23,7 @@ import com.myapp.cryptocurrencyapp.presentation.coin_detail.components.TeamListI
 import com.myapp.cryptocurrencyapp.presentation.coin_list.components.CoinListItem
 
 @Composable
-fun CoinListScreen(
+fun CoinDetailScreen(
     viewModel: CoinDetailViewModel = hiltViewModel()
 ) {
 
