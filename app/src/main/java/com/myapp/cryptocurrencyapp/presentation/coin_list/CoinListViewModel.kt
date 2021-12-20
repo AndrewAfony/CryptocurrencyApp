@@ -1,9 +1,10 @@
-package com.myapp.cryptocurrencyapp.domain.use_case.get_coins
+package com.myapp.cryptocurrencyapp.presentation.coin_list
 
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.myapp.cryptocurrencyapp.common.Resource
+import com.myapp.cryptocurrencyapp.domain.use_case.get_coins.GetCoinsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach

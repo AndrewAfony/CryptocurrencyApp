@@ -1,4 +1,4 @@
-package com.myapp.cryptocurrencyapp.domain.use_case.get_coins
+package com.myapp.cryptocurrencyapp.presentation.coin_list
 
 import com.myapp.cryptocurrencyapp.domain.model.Coin
 

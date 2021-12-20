@@ -1,4 +1,4 @@
-package com.myapp.cryptocurrencyapp.domain.use_case.get_coin
+package com.myapp.cryptocurrencyapp.presentation.coin_detail
 
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.SavedStateHandle
@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.myapp.cryptocurrencyapp.common.Constants
 import com.myapp.cryptocurrencyapp.common.Resource
+import com.myapp.cryptocurrencyapp.domain.use_case.get_coin.GetCoinUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
@@ -18,7 +19,7 @@ class CoinDetailViewModel @Inject constructor(
 ): ViewModel() {
 
     var state = mutableStateOf(CoinDetailState())
-    private set
+        private set
 
     init {
         savedStateHandle.get<String>(Constants.PARAM_COIN_ID)?.let { coinId ->
